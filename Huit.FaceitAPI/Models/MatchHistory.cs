@@ -9,7 +9,7 @@ namespace Huit.FaceitAPI.Models
 {
     public class MatchHistory
     {
-        ///players/{player_id}/history
+        // /players/{player_id}/history
         [JsonProperty("items")]
         public MatchDetails[] Match { get; set; }
     }
