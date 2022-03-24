@@ -7,6 +7,9 @@ using Newtonsoft.Json;
 
 namespace Huit.FaceitAPI.Models
 {
+    // /players/{player_id}
+    // /players/{nickname}
+    // /players/{game}&{PlayerID}
     public class PlayerDetails
     {
         [JsonProperty("avatar")]

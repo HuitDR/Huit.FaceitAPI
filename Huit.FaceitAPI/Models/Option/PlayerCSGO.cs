@@ -17,7 +17,7 @@ namespace Huit.FaceitAPI.Models
         public int SkillLevel { get; set; }
 
         [JsonProperty("game_player_id")]
-        public int GamePlayerId { get; set; }
+        public string GamePlayerId { get; set; }
 
         [JsonProperty("game_player_name")]
         public string GamePlayerName { get; set; }
