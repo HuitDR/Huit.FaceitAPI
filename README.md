@@ -2,6 +2,7 @@
 new FaceitAPI Reloaded by HuitDR
 
 Added 
+
 /players
 
 /players/{player_id}
