@@ -1,6 +1,13 @@
 # Huit.FaceitAPI
 new FaceitAPI Reloaded by HuitDR
 
-Added support for /players
+Added 
+/players
 
-Added support for /players/{player_id}/history
+/players/{player_id}
+
+/players/{game}&{game_player_id}
+
+/players/{player_id}/history
+
+/matches/{match_id}/stats
