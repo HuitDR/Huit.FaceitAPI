@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Huit.FaceitAPI.Models
+namespace Huit.FaceitAPI.Models.Option.MatchHistory
 {
     public class PlayerCSGO
     {

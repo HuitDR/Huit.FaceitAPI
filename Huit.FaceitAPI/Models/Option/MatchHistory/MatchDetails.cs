@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Huit.FaceitAPI.Models
+namespace Huit.FaceitAPI.Models.Option.MatchHistory
 {
     public class MatchDetails
     {

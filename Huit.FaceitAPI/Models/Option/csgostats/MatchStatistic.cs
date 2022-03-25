@@ -31,7 +31,7 @@ namespace Huit.FaceitAPI.Models.Option.csgostats
         public string played { get; set; }
 
         [JsonProperty("round_stats")]
-        public RoundStats Kills { get; set; }
+        public RoundStats RoundStats { get; set; }
 
         [JsonProperty("teams")]
         public Teams[] Teams { get; set; }

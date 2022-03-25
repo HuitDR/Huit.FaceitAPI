@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Huit.FaceitAPI.Models.Option.MatchHistory;
+using Newtonsoft.Json;
 
-namespace Huit.FaceitAPI.Models
+namespace Huit.FaceitAPI.Models.Option.MatchHistory
 {
     public class faction
     {

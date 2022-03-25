@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Huit.FaceitAPI.Models.Option
+namespace Huit.FaceitAPI.Models
 {
     public class MatchStats
     {
