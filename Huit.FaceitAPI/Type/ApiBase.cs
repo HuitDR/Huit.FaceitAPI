@@ -27,8 +27,6 @@ namespace Huit.FaceitAPI.Type
                 this.ResponseMessage = this.HttpClient.SendRequest(url, this.Authorization);
                 this.ResponseContent = this.ResponseMessage.Content.ReadAsStringAsync().Result;
                 object obj = (object)this.Deserializer.Deserialize<T>(this.ResponseContent);
-                if (this.Response != null)
-                    this.Response.ReadResponse(this.ResponseContent, this.ResponseMessage);
                 return (T)obj;
             }
             catch (Exception ex)
