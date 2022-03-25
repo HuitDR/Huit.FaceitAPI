@@ -33,18 +33,7 @@ namespace Huit.FaceitAPI.Type
 
         // matches
         // /matches/{match_id}/stats
-        public MatchStats GetMatchStatistic(string MatchID)
-        {
-            httpResponseMessage = httpClient.SendRequest("https://open.faceit.com/data/v4/matches/"+MatchID+"/stats", authorization);
-            ResponseContent = httpResponseMessage.Content.ReadAsStringAsync().Result;
-            if (ResponseContent != "Unauthorized" &&
-                ResponseContent != "Forbidden" &&
-                ResponseContent != "Not Found")
-            {
-                return jsonDeserializer.Deserialize<MatchStats>(ResponseContent);
-            }
-            return null;
-        }
+        
         
 
     }
