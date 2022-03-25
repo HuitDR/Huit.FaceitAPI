@@ -47,6 +47,7 @@
     <Compile Include="Interfaces\IAuthorizable.cs" />
     <Compile Include="Interfaces\IHttpClient.cs" />
     <Compile Include="Interfaces\IJsonDeserializer.cs" />
+    <Compile Include="Interfaces\IPlayers.cs" />
     <Compile Include="Interfaces\IResponse.cs" />
     <Compile Include="Models\MatchHistory.cs" />
     <Compile Include="Models\Option\csgostats\MatchStatistic.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="Models\Option\csgostats\RoundStats.cs" />
     <Compile Include="Models\Option\csgostats\TeamCSGOStats.cs" />
     <Compile Include="Models\Option\csgostats\Teams.cs" />
+    <Compile Include="Models\Hubs.cs" />
+    <Compile Include="Models\Option\Hub\Hub.cs" />
     <Compile Include="Models\Option\MatchHistory\faction.cs" />
     <Compile Include="Models\Option\MatchHistory\factions.cs" />
     <Compile Include="Models\Option\PlayerDetails\Game.cs" />
@@ -70,15 +73,21 @@
     <Compile Include="Models\Option\PlayerStatsCSGO\Lifetime.cs" />
     <Compile Include="Models\Option\PlayerStatsCSGO\Segment.cs" />
     <Compile Include="Models\Option\PlayerStatsCSGO\SegmentStat.cs" />
+    <Compile Include="Models\Option\Tournament\Tournament.cs" />
     <Compile Include="Models\PlayerDetails.cs" />
+    <Compile Include="Models\Tournaments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type\ApiBase.cs" />
     <Compile Include="Type\Authorization.cs" />
     <Compile Include="Type\Client.cs" />
     <Compile Include="Type\FaceitAPI.cs" />
     <Compile Include="Type\JsonDeserializer.cs" />
+    <Compile Include="Type\Players.cs" />
+    <Compile Include="Type\SimpleContainer`1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
