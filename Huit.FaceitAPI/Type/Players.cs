@@ -63,7 +63,7 @@ namespace Huit.FaceitAPI.Type
 
 
         // /players/{player_id}/history
-        public MatchHistory GetMatchHistory(string PlayerID, string GameID = "csgo", int offset = 0, int limit = 20, Int64 from = 0, Int64 to = 0) 
+        public MatchHistory GetMatchHistory(string PlayerID, string GameID = "csgo", int offset = 0, int limit = 20, Int64 from = 0, Int64 to = 0)
         {
             if (to == 0) { to = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds(); }
             httpResponseMessage = httpClient.SendRequest("https://open.faceit.com/data/v4/players/" + PlayerID + "/history?game=" + GameID + "&from=" + from + "&to=" + to + "&offset=" + offset + "&limit=" + limit, authorization);

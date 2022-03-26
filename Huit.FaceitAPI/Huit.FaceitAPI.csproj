@@ -30,14 +30,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <PlatformTarget>x64</PlatformTarget>
-    <OutputPath>bin\x64\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <PlatformTarget>x64</PlatformTarget>
-    <OutputPath>bin\x64\Release\</OutputPath>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -55,10 +47,8 @@
     <Compile Include="Interfaces\IAuthorizable.cs" />
     <Compile Include="Interfaces\IHttpClient.cs" />
     <Compile Include="Interfaces\IJsonDeserializer.cs" />
-    <Compile Include="Interfaces\IMatches.cs" />
     <Compile Include="Interfaces\IPlayers.cs" />
     <Compile Include="Interfaces\IResponse.cs" />
-    <Compile Include="Models\MatchDetails.cs" />
     <Compile Include="Models\MatchHistory.cs" />
     <Compile Include="Models\Option\csgostats\MatchStatistic.cs" />
     <Compile Include="Models\Option\csgostats\PlayerCSGO.cs" />
@@ -67,14 +57,12 @@
     <Compile Include="Models\Option\csgostats\Teams.cs" />
     <Compile Include="Models\Hubs.cs" />
     <Compile Include="Models\Option\Hub\Hub.cs" />
-    <Compile Include="Models\Option\MatchDetails\mfaction.cs" />
-    <Compile Include="Models\Option\MatchDetails\Roaster.cs" />
     <Compile Include="Models\Option\MatchHistory\faction.cs" />
     <Compile Include="Models\Option\MatchHistory\factions.cs" />
     <Compile Include="Models\Option\PlayerDetails\Game.cs" />
     <Compile Include="Models\Option\PlayerDetails\Games.cs" />
     <Compile Include="Models\Option\PlayerDetails\Infractions.cs" />
-    <Compile Include="Models\Option\MatchHistory\MatchDetail.cs" />
+    <Compile Include="Models\Option\MatchHistory\MatchDetails.cs" />
     <Compile Include="Models\MatchStats.cs" />
     <Compile Include="Models\Option\MatchHistory\PlayerCSGO.cs" />
     <Compile Include="Models\Option\csgostats\PlayerCSGOStats.cs" />
@@ -94,7 +82,6 @@
     <Compile Include="Type\Client.cs" />
     <Compile Include="Type\FaceitAPI.cs" />
     <Compile Include="Type\JsonDeserializer.cs" />
-    <Compile Include="Type\Matches.cs" />
     <Compile Include="Type\Players.cs" />
     <Compile Include="Type\SimpleContainer`1.cs" />
   </ItemGroup>

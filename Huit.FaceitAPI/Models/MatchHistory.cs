@@ -12,7 +12,7 @@ namespace Huit.FaceitAPI.Models
     {
         // /players/{player_id}/history
         [JsonProperty("items")]
-        public MatchDetail[] Match { get; set; }
+        public MatchDetails[] Match { get; set; }
 
         [JsonProperty("start")]
         public int Start { get; set; }

@@ -16,7 +16,7 @@ namespace Huit.FaceitAPI.Models.Option.PlayerStatsCSGO
         public string AvgKDRatio { get; set; }
 
         [JsonProperty("Recent Results")]
-        public int?[] RecentResults { get; set; }
+        public int[] RecentResults { get; set; }
 
         [JsonProperty("Longest Win Streak")]
         public string LongestWinStreak { get; set; }

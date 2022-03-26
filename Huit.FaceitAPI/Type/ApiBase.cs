@@ -16,11 +16,10 @@ namespace Huit.FaceitAPI.Type
         public IHttpClient HttpClient = (IHttpClient)new Client();
         public IJsonDeserializer Deserializer = (IJsonDeserializer)new JsonDeserializer();
         private HttpResponseMessage ResponseMessage;
-        private HttpResponseMessage httpResponseMessage;
         private string ResponseContent;
-        private JsonDeserializer jsonDeserializer = new JsonDeserializer();
 
         public ApiBase(Authorization authorization) => this.Authorization = authorization;
+
         protected T Get<T>(string url)
         {
             try
@@ -28,6 +27,8 @@ namespace Huit.FaceitAPI.Type
                 this.ResponseMessage = this.HttpClient.SendRequest(url, this.Authorization);
                 this.ResponseContent = this.ResponseMessage.Content.ReadAsStringAsync().Result;
                 object obj = (object)this.Deserializer.Deserialize<T>(this.ResponseContent);
+                if (this.Response != null)
+                    this.Response.ReadResponse(this.ResponseContent, this.ResponseMessage);
                 return (T)obj;
             }
             catch (Exception ex)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Huit.FaceitAPI.Models.Option.MatchHistory
 {
-    public class MatchDetail
+    public class MatchDetails
     {
         [JsonProperty("match_id")]
         public string MatchID { get; set; }
