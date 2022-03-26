@@ -15,3 +15,5 @@ Added
 
 
 All methods for automation will be implemented after adding all entities for the API methods group: Player and Matches;
+
+wiki: https://github.com/HuitDR/Huit.FaceitAPI/wiki/Authorization
