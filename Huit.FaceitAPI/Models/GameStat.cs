@@ -17,7 +17,7 @@ namespace Huit.FaceitAPI.Models
         public string GameID { get; set; }
 
         [JsonProperty("lifetime")]
-        public Lifetime GamePLayerName { get; set; }
+        public Lifetime LifeTimeStats { get; set; }
 
         [JsonProperty("segments")]
         public Segment[] Segments { get; set; }
