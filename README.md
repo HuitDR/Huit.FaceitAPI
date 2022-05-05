@@ -1,17 +1,41 @@
 # Huit.FaceitAPI
 new FaceitAPI Reloaded by HuitDR
 
-Added 
+|
+
+Players
+
 
 /players
+Retrieve player details
 
 /players/{player_id}
-
-/players/{game}&{game_player_id}
+Retrieve player details
 
 /players/{player_id}/history
+Retrieve all matches of a player
+
+/players/{player_id}/hubs
+Retrieve all hubs of a player
+
+/players/{player_id}/stats/{game_id}
+Retrieve statistics of a player
+
+/players/{player_id}/tournaments
+Retrieve all tournaments of a player
+
+|
+
+
+Matches
+
+
+/matches/{match_id}
+Retrieve match details
 
 /matches/{match_id}/stats
+Retrieve statistics of a match
 
+|
 
-All methods for automation will be implemented after adding all entities for the API methods group: Player and Matches;
+wiki: https://github.com/HuitDR/Huit.FaceitAPI/wiki/Authorization
