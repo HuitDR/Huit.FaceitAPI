@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Huit.FaceitAPI.Models.Option.csgostats
 {
-    public class PlayerCSGO
+    public class Player
     {
         [JsonProperty("player_id")]
         public string PlayerId { get; set; }
@@ -16,6 +16,6 @@ namespace Huit.FaceitAPI.Models.Option.csgostats
         public string NickName { get; set; }
 
         [JsonProperty("player_stats")]
-        public PlayerCSGOStats PlayerStats { get; set; }
+        public PlayerCSGOStats PlayerCSGO { get; set; }
     }
 }

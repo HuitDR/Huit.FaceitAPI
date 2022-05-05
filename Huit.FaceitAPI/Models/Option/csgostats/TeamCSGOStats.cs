@@ -10,24 +10,24 @@ namespace Huit.FaceitAPI.Models.Option.csgostats
     public class TeamCSGOStats
     {
         [JsonProperty("Team Win")]
-        public string KRRatio { get; set; }
+        public string TeamWinnner { get; set; }
 
         [JsonProperty("Team Headshots")]
         public string Headshots { get; set; }
 
         [JsonProperty("Overtime score")]
-        public string PentaKills { get; set; }
+        public string OverTimeScore { get; set; }
 
         [JsonProperty("First Half Score")]
-        public string Kills { get; set; }
+        public string FirstHalf { get; set; }
 
         [JsonProperty("Team")]
-        public string TripleKills { get; set; }
+        public string Team { get; set; }
 
         [JsonProperty("Final Score")]
-        public string KDRatio { get; set; }
+        public string FinalScore { get; set; }
 
         [JsonProperty("Second Half Score")]
-        public string Result { get; set; }
+        public string SecondHalf { get; set; }
     }
 }

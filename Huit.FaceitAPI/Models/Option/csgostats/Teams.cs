@@ -16,9 +16,9 @@ namespace Huit.FaceitAPI.Models.Option.csgostats
         public string premade { get; set; }
 
         [JsonProperty("team_stats")]
-        public TeamCSGOStats PentaKills { get; set; }
+        public TeamCSGOStats TeamStats { get; set; }
 
         [JsonProperty("players")]
-        public PlayerCSGO[] Players { get; set; }
+        public Player[] Players { get; set; }
     }
 }

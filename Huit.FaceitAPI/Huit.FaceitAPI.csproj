@@ -53,7 +53,7 @@
     <Compile Include="Models\MatchDetails.cs" />
     <Compile Include="Models\MatchHistory.cs" />
     <Compile Include="Models\Option\csgostats\MatchStatistic.cs" />
-    <Compile Include="Models\Option\csgostats\PlayerCSGO.cs" />
+    <Compile Include="Models\Option\csgostats\Player.cs" />
     <Compile Include="Models\Option\csgostats\RoundStats.cs" />
     <Compile Include="Models\Option\csgostats\TeamCSGOStats.cs" />
     <Compile Include="Models\Option\csgostats\Teams.cs" />
